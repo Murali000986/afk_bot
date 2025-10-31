@@ -1,10 +1,7 @@
-{
-  "serverHost": "titan.primemc.in",
-  "serverPort": 25565,
-  "botUsername": "Black",
-  "botPassword": "black01",
-  "discordToken": "MTQzMDAyMjI3ODA1NzU2MjIwMg.G_56JY.ghIqZZFy_CQZAqisP74U9cxKjjo9pLbutx27no",
-  "discordChannelId": "1430041482110439445",
-  "version": "1.21.1"
-}
+require('dotenv').config();
 
+module.exports = {
+  TOKEN: process.env.DISCORD_TOKEN,
+  CLIENT_ID: process.env.CLIENT_ID, // optional
+  GUILD_ID: process.env.GUILD_ID    // optional
+};
